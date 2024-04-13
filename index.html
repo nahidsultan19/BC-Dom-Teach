@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section>
-        <h2>Home Page</h2>
-    </section>
+    <header>
+        <h1 class="text-center">Banking Calculation</h1>
+    </header>
+    <main class="mt-10 w-3/4 mx-auto">
+        <section class="ammount-part">
+            <div class="grid md:grid-cols-3 gap-3">
+                <div class="bg-blue-200 p-10 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-2xl">$ <span class="deposit">00</span></h4>
+                </div>
+                <div class="bg-cyan-200 p-10 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-2xl">$ <span class="withdraw">00</span></h4>
+                </div>
+                <div class="bg-green-200 p-10 rounded">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-2xl">$ <span class="Balance">00</span></h4>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-6">
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-sky-200 p-10 rounded-md">
+                    <h2 class="text-xl font-bold">Deposit Amount</h2>
+                    <div class="mt-2 flex inline-block">
+                        <input id="deposit-input" class="h-8 px-1 w-auto rounded-sm" type="text" placeholder="Enter your amount">
+                        <button class="bg-blue-300 font-semibold rounded px-2 h-8 text-white">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-purple-200 p-10 rounded-md">
+                    <h2 class="text-xl font-bold">Withdraw Amount</h2>
+                    <div class="mt-2 flex inline-block">
+                        <input id="withdraw-input" class="h-8 px-1 rounded-sm" type="text" placeholder="Enter your amount">
+                        <button class="bg-blue-300 font-semibold rounded px-2 h-8 text-white">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
