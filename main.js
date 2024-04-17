@@ -53,6 +53,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const preBalance = balance.innerText;
 
     // check withdraw value less than total balance and not a number
+    if (withdrawValue <= 0) {
+        alert('Please enter valid input');
+        return;
+    }
     if (withdrawValue > preBalance) {
         alert('Please input the value less than total balance');
         return;
